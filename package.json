@@ -20,5 +20,8 @@
   ],
   "devDependencies": {
     "prettier": "^2.6.2"
+  },
+  "scripts": {
+    "test": "node test.js"
   }
 }
