@@ -57,24 +57,29 @@ const footer = makeFooter('cli-cmd', flags)
 
 ## API
 
-### alert(options)
+### footer(command, flags, [NUM_EXAMPLES])
 
-#### ❯ options
+#### ❯ command
+
+Type: `string`<br>
+**Required**
+
+The name of the command to show in the example
+
+##### ❯ flags
 
 Type: `object`<br>
-Default: `{}`
+**Required**
 
-You can specify the options below.
+The flags that will be passed to `cli-meow-help`
 
-##### ❯ type
+##### ❯ NUM_EXAMPLES
 
-Type: `string`<br>
-Default: `error`
+Type: `integer`<br>
+Default: `3`
+**Optional**
 
-##### ❯ msg
-
-Type: `string`<br>
-Default: `You forgot to define all options.` (Error message)
+Number of flags to include in the example
 
 ##### ❯ name
 
