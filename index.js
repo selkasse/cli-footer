@@ -19,7 +19,7 @@ import chalk from 'chalk'
 const ERROR_TEXT = chalk.red(`cli-footer ERROR`)
 
 export default (command, flags, NUM_EXAMPLES = 3) => {
-  if (!command) {
+  if (!command || typeof command !== 'string') {
     return `${ERROR_TEXT}: must supply command as a String`
   }
   if (!flags || typeof flags !== 'object') {
