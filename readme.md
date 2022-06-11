@@ -46,7 +46,12 @@ const flags = {
     desc: `Pass the wheel to the console`,
   },
 }
+
+// See screenshot below for output
+const footer = makeFooter('cli-cmd', flags)
 ```
+
+![cli-footer output screenshot](/cli-footer_output.PNG)
 
 <br />
 
