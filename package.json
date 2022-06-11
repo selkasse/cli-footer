@@ -4,6 +4,7 @@
   "description": "Generate a help menu footer for Node.js CLIs",
   "license": "MIT",
   "repository": "selkasse/cli-footer",
+  "type": "module",
   "author": {
     "name": "Sharif Elkassed",
     "email": "selkasse@gmu.edu",
@@ -23,5 +24,8 @@
   },
   "scripts": {
     "test": "node test.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1"
   }
 }
