@@ -27,23 +27,25 @@ npm install cli-footer
 ## Usage
 
 ```js
-const alert = require('cli-alerts')
+import makeFooter from 'cli-footer'
 
-// Provide the type, msg, and name options.
-alert({ type: `success`, msg: `Everything finished!` })
-// Prints: ✔ SUCCESS Everything finished!
-
-alert({ type: `success`, msg: `Everything finished!`, name: `DONE` })
-// Prints: ✔ DONE Everything finished!
-
-alert({ type: `warning`, msg: `You didn't add something!` })
-// Prints: ⚠ WARNING You didn't add something!
-
-alert({ type: `info`, msg: `Awais is awesome!` })
-// Prints: ℹ INFO Awais is awesome!
-
-alert({ type: `error`, msg: `Something went wrong!` })
-// Prints: ✖ ERROR Something went wrong!
+const flags = {
+  beer: {
+    type: `boolean`,
+    default: true,
+    desc: `Print a beer to the console`,
+  },
+  fear: {
+    type: `boolean`,
+    default: true,
+    desc: `Share your fears with the console`,
+  },
+  steer: {
+    type: `boolean`,
+    default: true,
+    desc: `Pass the wheel to the console`,
+  },
+}
 ```
 
 <br />
