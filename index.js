@@ -37,7 +37,7 @@ export default (command, flags, NUM_EXAMPLES = 3) => {
   })
 
   //* Dim everything except for the '--no'
-  let exampleString = `${chalk.green.dim(`${command}`)} `
+  let exampleString = `${chalk.green(`${command}`)} `
   for (let i = 0; i < NUM_EXAMPLES; i++) {
     //* Do not add if booleanExamples.length is less than NUM_EXAMPLES
     if (booleanExamples[i]) {
