@@ -81,11 +81,6 @@ Default: `3`
 
 Number of flags to include in the example
 
-##### ❯ name
-
-Type: `string`<br>
-Default: `''` (Empty string)
-
 <br>
 
 <small>**KEY**: `📦 NEW`, `👌 IMPROVE`, `🐛 FIX`, `📖 DOC`, `🚀 RELEASE`, and `🤖 TEST`
