@@ -46,12 +46,12 @@ export default (command, flags, NUM_EXAMPLES = 3) => {
     }
   }
 
-  let footer = `${chalk.yellowBright.dim.inverse(` NOTE `)}`
+  let footer = `${chalk.yellow.bold.dim.inverse(` NOTE `)}`
 
   footer += `\n\n${chalk.yellow(`--no`)} can be prepended to any boolean option`
   footer += `\n(if the default value is ${chalk.dim.yellow(`true`)})`
   footer += `\n\nThis will toggle the value to ${chalk.dim.yellow(`false`)}`
-  footer += `\n\n${chalk.yellowBright.dim.inverse(` EXAMPLE `)}\n\n`
+  footer += `\n\n${chalk.yellow.bold.dim.inverse(` EXAMPLE `)}\n\n`
   footer += exampleString
 
   return footer
