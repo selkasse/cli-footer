@@ -9,6 +9,7 @@ Create a CLI help footer to use with `meow` and `meow-cli-help`
 
 The footer supplies help text for boolean flags that default to `true`
 <br>
+<br>
 Example: `--no-clear`, `--no-debug`, etc.
 
 <br>
